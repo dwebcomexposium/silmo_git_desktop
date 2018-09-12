@@ -20,3 +20,10 @@ html[lang=en] .dor .logo .logo__image {
     background-image: url(/theme/silmo_git_desktop/images/silmo_or_EN.jpg);
     height: 166px;
 }*/
+
+/***** LIEN "toutes les sessions" CALENDRIER EVENT ****/
+
+.mod-catal .catal-ex-item-stand-more{
+     display: inherit;
+     color: #FEED02;
+}
