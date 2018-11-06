@@ -252,7 +252,7 @@ a:hover, a:focus, a:active { color: #161616; }
 	Account widget
 \* ------------------------------------------------------------ */
 
-#cxpmClientAccountWidget { position: absolute; top: 5px; right: 37px; }
+#cxpmClientAccountWidget { position: absolute !important; top: 5px; right: 37px; }
 
 #cxpmClientAccountWidget .widget-text { margin-right: 5px; }
 #cxpmClientAccountWidget .widget-text i { display: none; }
