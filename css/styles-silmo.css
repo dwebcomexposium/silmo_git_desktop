@@ -1924,3 +1924,42 @@ body:not(.front) .mod-catal  .pagin-item a {text-decoration: none!important; }
 
  
  
+/* ------------------------------------------------------------ *\
+	Popin
+\* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ *\
+    Helpers
+\* ------------------------------------------------------------ */
+
+.popup-alt i[class^="ico-"] { display: inline-block; vertical-align: middle; background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; }
+
+/* ------------------------------------------------------------ *\
+    Icons
+\* ------------------------------------------------------------ */
+
+.ico-close { width: 19px; height: 19px; background: url(img2/icons/ico-close.svg); }
+
+/* ------------------------------------------------------------ *\
+    Popup Alt
+\* ------------------------------------------------------------ */
+
+.popup-alt { position: fixed; top: 0; left: 0; z-index: 5002; width: 100%; height: 100%; background: rgba(0, 0, 0, .8); opacity: 0; visibility: hidden; transition: .3s; }
+.popup-alt .popup__inner { position: relative; width: 850px; margin: 160px auto; background: #fff; /*overflow: hidden;*/ }
+
+.popup-alt .popup__body { padding: 0; margin: 0; }
+.popup-alt .popup__body iframe { margin: 0; }
+
+.popup-alt.show { opacity: 1; visibility: visible; }
+
+/* ------------------------------------------------------------ *\
+    Button Close Popup
+\* ------------------------------------------------------------ */
+
+.btn-close-popup { position: absolute; top: 0; right: 0; width: 67px; height: 65px; display: inline-block; padding: 0; margin-right: -50px; margin-top: -30px; }
+.btn-close-popup .ico-close { position: relative; transition: .8s; }
+.btn-close-popup:hover .ico-close{ transform: rotate(180deg); }
+.popup-alt .popup__body .block-header h2 {margin: 0;font-weight: 700;font-size: 19px;color: #2b2f2f;letter-spacing: 0.05em; text-transform: none; line-height: 1.3;padding: 0;border: 0;margin-bottom: 21px;}
+.popup-alt .popup__body .block-header h2 span {display: inline-block;vertical-align: middle;font-weight: 500;font-size: 28px;color: #fed700;position: relative;top: 0;}
+.popup-alt .popup__inner a { color:#2b2f2f;  }
+.popup-alt .popup__inner a:hover { color:#2b2f2f; text-decoration: none; }
