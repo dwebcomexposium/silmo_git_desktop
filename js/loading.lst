@@ -8,4 +8,5 @@ cookies-warning.min.js
 modules/*
 wb/*
 scripts-silmo.js
+wb-popup.js
 newsletter.js
