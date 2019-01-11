@@ -168,7 +168,8 @@
 		var feeds = new Instafeed({
 			get        : 'user',
 			userId     : '740922722', // SILMO user id
-			accessToken: '740922722.1677ed0.cf1ce410b60c4237a33a4ba9a73e1e1b', // SILMO access token 
+			accessToken: '740922722.1677ed0.55647f45ca814ee98cb58254542102c1', // SILMO access token 
+
 			template   : '<div class="instagram-feed"><a href="{{link}}"><img src="{{image}}" /></a></div>',
 			filter     : function(image) {
 				return ++counter > 5 ? false : true;
