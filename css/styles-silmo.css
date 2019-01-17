@@ -1963,3 +1963,6 @@ body:not(.front) .mod-catal  .pagin-item a {text-decoration: none!important; }
 .popup-alt .popup__body .block-header h2 span {display: inline-block;vertical-align: middle;font-weight: 500;font-size: 28px;color: #fed700;position: relative;top: 0;}
 .popup-alt .popup__inner a { color:#2b2f2f;  }
 .popup-alt .popup__inner a:hover { color:#2b2f2f; text-decoration: none; }
+
+.global-wrapper .background {display: none }
+
