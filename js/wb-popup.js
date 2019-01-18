@@ -37,7 +37,8 @@
 		}
 	});
 
-	$('.checkbox input[type=checkbox').on('click', function() {
+
+	$('.checkbox input[type=checkbox]').on('click', function() {	
 		if ( $('.checkbox').find('input:checked').length ) {
 
 			setTimeout(function() {
