@@ -854,9 +854,9 @@ a:hover, a:focus, a:active { color: #161616; }
          justify-content: center;}
 
 .edito-silmo-fete-alt .block-content { -webkit-flex: 0 1 100%; -ms-flex: 0 1 100%; flex: 0 1 100%; font-size: 24px; line-height: 1; color: #161615; text-transform: uppercase; }
-.edito-silmo-fete-alt .block-content strong { position: relative; display: block; padding-bottom: 30px; font-family: 'Montserrat', sans-serif!important; font-size: 125px; line-height: .65; font-weight: 300; }
+.edito-silmo-fete-alt .block-content strong { position: relative; display: block; padding-bottom: 30px; font-family: 'Montserrat', sans-serif!important; font-size: 60px; line-height: .85; font-weight: 300; }
 .edito-silmo-fete-alt .block-content strong:before { content: ''; position: absolute; width: 24px; height: 4px; bottom: 0; left: 50%; margin-left: -12px; background: #161615; }
-.edito-silmo-fete-alt .block-content span { display: block; font-size: 110px; font-family: 'Montserrat', sans-serif!important;}
+.edito-silmo-fete-alt .block-content span { display: block; font-size: 50px; font-family: 'Montserrat', sans-serif!important;}
 .edito-silmo-fete-alt .block-content small { display: block; font-size: 19px; }
 .edito-silmo-fete-alt .block-content figcaption { display: block; padding-top: 14px; font-size: 10px; font-weight: 700; letter-spacing: 0.5em; }
 
@@ -1017,7 +1017,7 @@ a:hover, a:focus, a:active { color: #161616; }
 
 .quicklinks-navigation { margin-bottom: 56px; }
 
-.quicklinks-navigation .ql-list { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.quicklinks-navigation .ql-list { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; padding-top: 20px; }
 .quicklinks-navigation .ql-list li { position: relative; margin: 0 13px; border: 0; }
 .quicklinks-navigation .ql-list li + li:before { content: ''; position: absolute; width: 1px; height: 6px; top: 50%; left: -15px; margin-top: -4px; background: #161616; }
 .quicklinks-navigation .ql-list a { display: block; padding: 0 6px 2px; margin: 0; border: 0; font-size: 13px; letter-spacing: 0.15em; color: #161616; transition: background .3s; }
