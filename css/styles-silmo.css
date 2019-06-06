@@ -365,7 +365,7 @@ a:hover, a:focus, a:active { color: #161616; }
 
 .newsletter-form form { position: relative; }
 
-.newsletter-form .nf-main-content { display: inline-block; width: 100%; max-width: 545px; padding: 45px 70px 64px 50px; margin: 0; vertical-align: middle; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); opacity: 0; visibility: hidden; font-size: 15px; line-height: 1.33; color: #161616; text-align: left; background: #fff; transition: opacity .3s, visibility .3s, -webkit-transform .3s; transition: transform .3s, opacity .3s, visibility .3s; transition: transform .3s, opacity .3s, visibility .3s, -webkit-transform .3s; }
+.newsletter-form .nf-main-content { display: inline-block; width: 100%; max-width: 545px; padding: 45px 70px 84px 50px; margin: 0; vertical-align: middle; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); opacity: 0; visibility: hidden; font-size: 15px; line-height: 1.33; color: #161616; text-align: left; background: #fff; transition: opacity .3s, visibility .3s, -webkit-transform .3s; transition: transform .3s, opacity .3s, visibility .3s; transition: transform .3s, opacity .3s, visibility .3s, -webkit-transform .3s; }
 .newsletter-form .nf-title { font-family: 'Montserrat', sans-serif!important; font-size: 60px; font-weight: 300; line-height: .75; color: #161615; margin: 0 0 28px; }
 
 .newsletter-form .form-close { position: absolute; width: 24px; height: 24px; top: 20px; right: 20px; z-index: 2; }
@@ -377,13 +377,13 @@ a:hover, a:focus, a:active { color: #161616; }
 .newsletter-form .nf-form-submit .btn-primary:after { margin-left: 18px; }
 
 .newsletter-form .nf-form-input { float: none; width: 100%; padding-top: 33px; margin: 0; }
-.newsletter-form .nf-form-input input { display: block; width: 100%; height: 52px; min-height: 0; padding: 0 206px 0 20px; border: 1px solid #161616; border-radius: 0; font-size: 15px; font-weight: 700; color: #161615; }
+.newsletter-form .nf-form-input input.form-txt { display: block; width: 100%; height: 42px; min-height: 0; padding: 0 206px 0 20px; border: 1px solid #161616; border-radius: 0; font-size: 15px; font-weight: 700; color: #161615; }
 .newsletter-form .nf-form-input input::-webkit-input-placeholder { opacity: 1 !important; font-style: normal !important; color: #161615 !important; }
 .newsletter-form .nf-form-input input::-moz-placeholder { opacity: 1 !important; font-style: normal !important; color: #161615 !important; }
 .newsletter-form .nf-form-input input:-moz-placeholder { opacity: 1 !important; font-style: normal !important; color: #161615 !important; }
 .newsletter-form .nf-form-input input:-ms-input-placeholder { opacity: 1 !important; font-style: normal !important; color: #161615 !important; }
 
-.newsletter-form .optin-container,
+
 .newsletter-form label,
 .newsletter-form p:empty { display: none; }
 
@@ -393,6 +393,10 @@ a:hover, a:focus, a:active { color: #161616; }
 .newsletter-form .form-close:hover:before,
 .newsletter-form .form-close:hover:after { background: #161615; }
 
+
+
+.newsletter-form .optin-container  { position: absolute; }
+ 
 /* ------------------------------------------------------------ *\
 	Buttons
 \* ------------------------------------------------------------ */
