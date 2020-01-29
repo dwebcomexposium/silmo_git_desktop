@@ -1,6 +1,7 @@
 ;(function($, window, document, undefined) {
 	var $win = $(window);
 	var $doc = $(document);
+	var activeClass = 'active';
 
 	function getCookie(name) {
 	    var nameEQ = name + '=';
@@ -33,12 +34,11 @@
 
 	$win.on('load', function() {
 		if (!getCookie('popup-no-open')) {
-			setTimeout(openPopup, 3000);
+			setTimeout(openPopup, 300);
 		}
 	});
 
-
-	$('.checkbox input[type=checkbox]').on('click', function() {	
+	$('.checkbox input[type="checkbox"]').on('click', function() {
 		if ( $('.checkbox').find('input:checked').length ) {
 
 			setTimeout(function() {
