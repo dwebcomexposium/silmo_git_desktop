@@ -2590,3 +2590,7 @@ background: linear-gradient(90deg, rgba(255,240,42,1) 11%, rgba(186,104,162,1) 4
 .checkbox label:after { content: ''; position: absolute; top: 12px; right: 0; display: inline-block; width: 11px; height: 8px; transform: translate(-50%, -50%); background: url(images/popup/ico-check.png); background-repeat: no-repeat; background-size: cover; transition: .3s; opacity: 0; visibility: hidden; }
 
 .checkbox input:checked + label:after { opacity: 1; visibility: visible; }
+
+
+
+.slider-emag .intro { display: none; }
