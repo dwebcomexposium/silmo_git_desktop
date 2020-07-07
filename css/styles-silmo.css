@@ -2785,3 +2785,4 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 
 
 .ed-intro h1 :not(.animation-title) { display: none; }
+.is-stuck .mn-item-lvl-1:first-child { display: block; }
