@@ -68,7 +68,7 @@
       loop: false, // loop transition
       orientationReset: false, // reset on orientationchange
       lastOrientation: -1, // last orientation value
-      useActiveClasses: false, // use classes for active/inactive items (below)
+      useActiveClasses: true, // use classes for active/inactive items (below)
       transitionsSet: false, // transitions are initialized
       classActive: 'slider-item-active', // active HTML class, without dot
       classPrevious: 'slider-item-prev', // active HTML class, without dot
