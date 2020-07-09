@@ -1268,5 +1268,5 @@ body.safari-fixes .edi-family .inside>h4{padding-top:7px;padding-bottom:3px}
 .section-cookie .btn-primary{position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:11px;font-family:Static,sans-serif;font-weight:400;padding:12px 15px 11px 22px;letter-spacing:.1em}
 .section-cookie .btn-primary span:after{width:17px;height:11px;margin-left:14px}
 .section-cookie .section__content{position:relative;padding-right:146px}
-.ed-intro h1 :not(.animation-title){display:none}
+.ed-intro h1:not(.animation-title) { display: none; }
 .is-stuck .mn-item-lvl-1:first-child{display:block}
