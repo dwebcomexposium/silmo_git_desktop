@@ -2857,15 +2857,12 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 .section-cookie .btn-primary span:after { width: 17px; height: 11px; margin-left: 14px; }
 .section-cookie .section__content { position: relative; padding-right: 146px; }
 
-
-
 /*div*/
 .ed-intro h2, .at-publication  { display: none; }
 .is-stuck .mn-item-lvl-1:first-child { display: block; }
-.js .ls-lang-list .js .ls-lang-list { position: relative!important; background: none!important; }
-/*.intro-head h1 { padding-top: 15px;  }*/
+.js .ls-lang-list { position: relative!important; background: none!important; }
 .cxp-pagination .grid-la-list { margin: 48px -20px 37px; justify-content: center; }
-
 #zone2 .list-articles { padding-top: 50px; }
 #zone2 .list-articles .intro { padding-top: 0; }
+
 
