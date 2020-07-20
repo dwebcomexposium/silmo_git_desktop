@@ -2868,7 +2868,7 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 
 
 /*div*/
-.ed-intro h2, .at-publication  { display: none; }
+.ed-intro h2, .at-publication, .gla-item-author  { display: none; }
 .is-stuck .mn-item-lvl-1:first-child { display: block; }
 .js .ls-lang-list { position: relative!important; background: none!important; }
 .cxp-pagination .grid-la-list { margin: 48px -20px 37px; justify-content: center; }
