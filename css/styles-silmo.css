@@ -855,7 +855,7 @@ li:hover > .mn-link.mn-link.is-active:after { width: 0; }
 .logo-container .logo__image { max-width: 162px; margin: 0 auto 11px; transition: .3s; }
 .logo-container .logo__image img { width: 100%; }
 
-.logo-container .logo__content { border-top: 1px solid #241D4C; padding: 14px 0; font-size: 12px; text-transform: uppercase; font-weight: bold; letter-spacing: .066em; color: #241D4C; transition: opacity 0s, visibility 0s, max-height .3s, width .6s; }
+.logo-container .logo__content { border-top: 1px solid #241D4C; padding: 14px 0; font-size: 12px; text-transform: uppercase; font-weight: bold; letter-spacing: .066em; color: #241D4C; transition: opacity 0s, visibility 0s, max-height .3s, width .6s; min-width: 190px; }
 
 @media (max-width: 1559px) {
 	.logo-container { left: 0; padding: 60px 20px 40px; }
@@ -2875,3 +2875,4 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 
 #zone2 .list-articles { padding-top: 50px; }
 #zone2 .list-articles .intro { padding-top: 0; }
+
