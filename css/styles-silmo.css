@@ -686,7 +686,7 @@ body.safari-fixes .site-banner .gsf-submit-btn span { position: relative; top: 2
 .is-stuck .logo-container .logo__image { max-width: 75px; margin-bottom: 0; }
 
 .is-fixed .logo-container .logo__content,
-.is-stuck .logo-container .logo__content { opacity: 0; visibility: hidden; max-height: 0; border-color: transparent; padding: 0; width: 0; }
+.is-stuck .logo-container .logo__content { opacity: 0; visibility: hidden; max-height: 0; border-color: transparent; padding: 0; width: 0; min-width: auto;}
 
 .is-fixed .header-box,
 .is-stuck .header-box { top: 0; }
@@ -2865,7 +2865,23 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 .section-cookie .btn-primary span:after { width: 17px; height: 11px; margin-left: 14px; }
 .section-cookie .section__content { position: relative; padding-right: 146px; }
 
+/*true*/
+/*.cc-cookies { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 160; font-size: 12px; line-height: 1.5; color: #000; box-shadow: 0px 0px 40px rgba(0,0,0,.17); background: #fff; letter-spacing: .11em; transition: opacity .3s, visibility .3s; opacity: 0; visibility: hidden; pointer-events: none; height: auto; }
 
+.cc-cookies { opacity: 1; visibility: visible; pointer-events: all; }
+
+.cc-cookies p { margin-bottom: 0; }
+.cc-cookies a:not(.btn-primary) { position: relative; display: inline-block; text-decoration: none; }
+.cc-cookies a:not(.btn-primary):hover:after { opacity: 0; visibility: hidden; }
+.cc-cookies a:not(.btn-primary):hover:before { opacity: 1; visibility: visible; }
+.cc-cookies a:not(.btn-primary):after { content: ''; position: absolute; bottom: -3px; left: 0; width: 100%; height: 1px; background: linear-gradient(to right, rgba(255,236,0,1) 0%,rgba(206,93,166,1) 50%,rgba(39,50,116,1) 100%); transition: .3s; }
+.cc-cookies a:not(.btn-primary):before { content: ''; position: absolute; bottom: -3px; left: 0; width: 100%; height: 1px; background: #FFED00; transition: .3s; opacity: 0; visibility: hidden; }
+
+.cc-cookies .inside { position: relative; max-width: 1162px; padding: 27px 50px; margin: 0 auto; }
+
+.cc-cookies .btn-primary { position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 11px; font-family: 'Static', sans-serif; font-weight: normal; padding: 12px 15px 11px 22px; letter-spacing: .1em; }
+.cc-cookies .btn-primary span:after { width: 17px; height: 11px; margin-left: 14px; }
+.cc-cookies .inside { position: relative; padding-right: 146px; }*/
 
 /*div*/
 .ed-intro h2, .at-publication, .gla-item-author  { display: none; }
@@ -2875,4 +2891,3 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 
 #zone2 .list-articles { padding-top: 50px; }
 #zone2 .list-articles .intro { padding-top: 0; }
-
