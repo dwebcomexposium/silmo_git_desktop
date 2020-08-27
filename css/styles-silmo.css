@@ -2082,8 +2082,9 @@ body.front .cxp-pagination .list-grids-with-pagin { max-width: 988px; margin: 0 
 
 /*  Pagination  */
 
-.list-articles.slider-evenement .slider-pagin,
-.list-articles.slider-evenement .slider-custom-paging { display: block; }
+.list-articles.slider-evenement .slider-pagin { display: block; }
+.list-articles.slider-evenement .slider-custom-paging { display: none; }
+
 
 .list-articles.slider-evenement .slider-pagin { position: absolute; bottom: 40px; left: 50%; right: auto; top: auto; transform: translateX(-50%); width: 100%; }
 .list-articles.slider-evenement .slider-pagin-nb {}
