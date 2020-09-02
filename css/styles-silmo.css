@@ -2881,7 +2881,7 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 	Catalogue - cacher stands
 \* ------------------------------------------------------------ */
 
-.mod-catal .catal-ex-item-stand {
+.mod-catal .catal-ex-item-stand, .mod-catal .catal-ed-main .catal-ed-main-stand {
     display: none;
 }
 
