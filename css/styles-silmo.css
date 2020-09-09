@@ -749,7 +749,7 @@ body.safari-fixes .site-banner .gsf-submit-btn span { position: relative; top: 2
 
 .main-navigation > .mn-menu-line > ul { margin: 0 -21px; list-style: none; -webkit-transition: margin .3s; -o-transition: margin .3s; transition: margin .3s; }
 .main-navigation > .mn-menu-line > ul:after { content: ''; display: table; clear: both; line-height: 0; }
-.main-navigation > .mn-menu-line > ul > li { float: left; padding: 0 21px; -webkit-transition: padding .3s; -o-transition: padding .3s; transition: padding .3s; }
+.main-navigation > .mn-menu-line > ul > li { float: left; padding: 0 18px; -webkit-transition: padding .3s; -o-transition: padding .3s; transition: padding .3s; }
 
 .mn-menu-line { margin: 0; padding: 0; border: 0; }
 
@@ -757,7 +757,7 @@ body.safari-fixes .site-banner .gsf-submit-btn span { position: relative; top: 2
 
 .mn-link-text::before { display: none; }
 .mn-link { -webkit-transition: color .3s; -o-transition: color .3s; transition: color .3s; }
-.mn-item-lvl-1 > .mn-link { position: relative; min-height: auto; padding: 10px 0; font-size: 16px; color: #fff; font-weight: bold; text-transform: uppercase; letter-spacing: .06em; }
+.mn-item-lvl-1 > .mn-link { position: relative; min-height: auto; padding: 10px 0; font-size: 16px; color: #fff; font-weight: bold; text-transform: uppercase; letter-spacing: .03em; }
 .mn-menu-item-avecpicto .mn-link-text { margin-left: 0; }
 
 .mn-link.mn-link:after { content: ''; position: absolute; left: 0; right: auto; bottom: 0; top: auto; width: 0; height: 2px; background: #fff; transition: .3s; }
@@ -813,15 +813,23 @@ body.safari-fixes .site-banner .gsf-submit-btn span { position: relative; top: 2
 li:hover > .mn-menu-submenu { margin-top: 0 !important; opacity: 1; visibility: visible; }
 li:hover > .mn-link.mn-link.is-active:after { width: 0; }
 
-@media (max-width: 1559px) {
+@media (max-width: 1620px) {
 
 	.main-navigation > .mn-menu-line > ul > li { padding: 0 15px; }
 }
 
 
+
+
+@media (max-width: 1559px) {
+	.mn-item-lvl-1 > .mn-link { font-size: 14px; }
+	.main-navigation > .mn-menu-line > ul > li { padding: 0 14px; }
+}
+
+
 @media (max-width: 1420px) {
 	.mn-item-lvl-1 > .mn-link { font-size: 14px; }
-	.main-navigation > .mn-menu-line > ul > li { padding: 0 15px; }
+	.main-navigation > .mn-menu-line > ul > li { padding: 0 14px; }
 
 }
 
@@ -2877,4 +2885,5 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 
 #zone2 .list-articles { padding-top: 50px; }
 #zone2 .list-articles .intro { padding-top: 0; }
+
 
