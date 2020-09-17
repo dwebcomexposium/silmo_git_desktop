@@ -40,3 +40,9 @@ html[lang=en] .dor .logo .logo__image {
 .article-navigation{
     display: none;
 }
+
+
+/*New catalogue */
+#catalog-v2 .bgTint {
+    background-color: #FFED00;
+}
