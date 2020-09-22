@@ -54,5 +54,12 @@ html[lang=en] .dor .logo .logo__image {
     display: none;}
 
 /*cacher bloc stand fiche exposant et fiche produit*/
-#catalog-v2 .CatalogStandsBlock{
-    display: none;}
+
+#catalog-v2 .CatalogStandsBlock {
+    display: none;
+}
+
+@media (min-width: 700px)
+#catalog-v2 .CatalogStandsBlock {
+    display: none;
+}
