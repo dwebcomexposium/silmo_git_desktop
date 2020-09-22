@@ -47,6 +47,6 @@ html[lang=en] .dor .logo .logo__image {
     background-color: #FFED00;
 }
 
-.body-corpo.catalogue #catalog-v2 .CatalogAppointmentBar {
+.body-corpo.catalogue #catalog-v2 section.CatalogAppointmentBar {
     display: none;
 }
