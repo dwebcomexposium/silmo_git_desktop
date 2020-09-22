@@ -43,6 +43,9 @@ html[lang=en] .dor .logo .logo__image {
 
 
 /*New catalogue */
-#catalog-v2 .bgTint {
+.body-corpo.catalogue #catalog-v2 .bgTint {
     background-color: #FFED00;
 }
+
+.body-corpo.catalogue #catalog-v2 .CatalogAppointmentBar {
+    display: none;
