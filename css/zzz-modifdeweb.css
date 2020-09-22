@@ -63,3 +63,7 @@ html[lang=en] .dor .logo .logo__image {
 #catalog-v2 .CatalogStandsBlock {
     display: none !important;
 }
+
+/*cacher nbre de résultats*/
+.CatalogResultsTitle-subtitle.textAccentOpacity {
+    display: none !important;}
