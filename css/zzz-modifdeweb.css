@@ -67,3 +67,8 @@ html[lang=en] .dor .logo .logo__image {
 /*cacher nbre de résultats*/
 #catalog-v2 .CatalogResultsTitle-subtitle {
     display: none !important;}
+
+/*cacher filtre secteur*/
+#catalog-v2 [data-type="sector"] {
+   display: none;
+}
