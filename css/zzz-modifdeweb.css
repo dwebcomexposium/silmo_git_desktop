@@ -46,7 +46,7 @@ html[lang=en] .dor .logo .logo__image {
 	Catalogue New
 \* ------------------------------------------------------------ */
 /*fond jaune*/
-#catalog-v2.catalog-scope main.container div.CatalogResultsList-searchcontainer.bgTint{
+#catalog-v2 .bgTint{
     background-color: #FFED00;
 }
 /*cacher encart présent sur */
