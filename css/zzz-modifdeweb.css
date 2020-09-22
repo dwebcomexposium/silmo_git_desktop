@@ -53,6 +53,6 @@ html[lang=en] .dor .logo .logo__image {
 #catalog-v2.catalog-scope div.container div.Container-inner section.CatalogAppointmentBar {
     display: none;}
 
-/*cacher bloc stand*/
-#catalog-v2.catalog-scope div.container div.Container-inner section.CatalogExhibitorStrip div.CatalogExhibitorStrip-right.bgShade div{
+/*cacher bloc stand fiche exposant et fiche produit*/
+#catalog-v2 .CatalogStandsBlock{
     display: none;}
