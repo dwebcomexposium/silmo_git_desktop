@@ -51,15 +51,15 @@ html[lang=en] .dor .logo .logo__image {
 }
 /*cacher encart présent sur */
 #catalog-v2.catalog-scope div.container div.Container-inner section.CatalogAppointmentBar {
-    display: none;}
+    display: none !important;}
 
 /*cacher bloc stand fiche exposant et fiche produit*/
 
 #catalog-v2 .CatalogStandsBlock {
-    display: none;
+    display: none !important;
 }
 
 @media (min-width: 700px)
 #catalog-v2 .CatalogStandsBlock {
-    display: none;
+    display: none !important;
 }
