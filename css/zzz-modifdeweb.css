@@ -42,11 +42,17 @@ html[lang=en] .dor .logo .logo__image {
 }
 
 
-/*New catalogue */
-.body-corpo.catalogue #catalog-v2 .bgTint {
+/* ------------------------------------------------------------ *\
+	Catalogue New
+\* ------------------------------------------------------------ */
+/*fond jaune*/
+#catalog-v2.catalog-scope main.container div.CatalogResultsList-searchcontainer.bgTint{
     background-color: #FFED00;
 }
+/*cacher encart présent sur */
+#catalog-v2.catalog-scope div.container div.Container-inner section.CatalogAppointmentBar {
+    display: none;}
+/*cacher bloc stand*/
 
-.body-corpo.catalogue #catalog-v2 section.CatalogAppointmentBar {
-    display: none;
-}
+#zone2.zone div#comexposium-connect2-app.VueWrapper div div#catalog-v2.catalog-scope div.container div.Container-inner section.CatalogExhibitorStrip div.CatalogExhibitorStrip-right.bgShade div{
+    display: none;}
