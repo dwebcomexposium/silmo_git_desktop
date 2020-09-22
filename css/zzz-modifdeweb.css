@@ -47,7 +47,7 @@ html[lang=en] .dor .logo .logo__image {
 \* ------------------------------------------------------------ */
 /*fond jaune*/
 #catalog-v2 .bgTint{
-    background-color: #FFED00;
+    background-color: #FFED00 !important;
 }
 /*cacher encart présent sur */
 #catalog-v2.catalog-scope div.container div.Container-inner section.CatalogAppointmentBar {
