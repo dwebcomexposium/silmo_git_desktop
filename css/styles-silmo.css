@@ -2887,3 +2887,11 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 #zone2 .list-articles .intro { padding-top: 0; }
 
 
+/*new catalog*/
+
+.catalogue .intro-head { min-height: auto; padding: 120px 0 20px; }
+.catalogue .intro-head .intro__title { display: none; }
+#catalog-v2 {
+    font-family: 'Gotham', sans-serif!important;
+    color: #241d4c!important;
+}
