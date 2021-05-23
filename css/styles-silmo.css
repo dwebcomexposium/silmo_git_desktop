@@ -1142,7 +1142,8 @@ body.safari-fixes .link-view-all { padding: 14px 26px 11px; }
 \* ------------------------------------------------------------ */
 
 .ed-intro { position: relative; min-height: 827px; z-index: 2; margin-bottom: 128px; padding: 224px 0 114px 150px; }
-.ed-intro:before { content: ''; position: absolute; top: 0; left: 50%; z-index: -1; width: 100vw; height: 100%; background: linear-gradient(148.48deg, #FEFAD9 16.05%, #FFE2D2 47.85%)}
+.ed-intro:before { content: ''; position: absolute; top: 0; left: 50%; z-index: -1; width: 100vw; height: 100%; background: linear-gradient(to right,rgba(254, 250, 217, 1) 0%,rgba(255, 226, 210, 1) 100%);
+    transform: translateX(-50%); }
 
 /*  Ed-intro Image  */
 
@@ -1155,7 +1156,7 @@ body.safari-fixes .link-view-all { padding: 14px 26px 11px; }
 
 /*  Ed-intro Inside  */
 
-.ed-intro h1 { position: relative; left: -6px; margin-bottom: 20px; font-weight: bold; font-size: 51px; letter-spacing: -.05em; text-transform: uppercase; color: #353030; line-height: 1.2; }
+.ed-intro h1 { position: relative; left: -6px; margin-bottom: 20px; font-weight: bold; font-size: 61px; letter-spacing: -.05em; text-transform: uppercase; color: #353030; line-height: 1.2; }
 .ed-intro .inside { padding-left: 86px; color: #353030; }
 .ed-intro .ed-intro__content > p { max-width: 50%; margin-bottom: 18px; letter-spacing: -.03em; opacity: 0; transform: translateY(10%) scaleY(1.2); transition: all 1.8s ease; transition-delay: .3s; }
 
