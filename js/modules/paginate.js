@@ -2,7 +2,7 @@
  AJAX pagination
  Links that load HTML via XHR into target element and update the links list
 
- @contributors: Geoffrey Crofte (Alsacréations), Guillaume Focheux (Alsacréations), Rodolphe (Alsacréations)
+ @contributors: Geoffrey Crofte (AlsacrÃ©ations), Guillaume Focheux (AlsacrÃ©ations), Rodolphe (AlsacrÃ©ations)
  @date-created: 2015-04-13
  @last-update: 2015-07-06
  */
@@ -13,7 +13,7 @@
   function pagination_change(e) {
 
     // Vars
-    var separator = '?page='; // @PROD edit to '/'
+    var separator = '?page=';
     var $this = $(this);
     var page = $this.data('page');
     if(page===undefined) return true; // Don't disturb true links (not page links)
@@ -50,40 +50,54 @@
           page = Math.max(1, parseInt($link.data('page')) - 1);
         }
       }
-
-      $link = $('[data-page=' + page + ']', $pagination_container);
-
-      // Regenerate page groups (10-20, 20-30... or less with custom pagedisp)
-      if (pagedisp>0 && $link.length < 1) {
-        $('li:not(.pagin-prev,.pagin-next)', $pagination_container).remove();
-        var pagestart = Math.ceil(((page - 1) / 10) *10);
-        var html = '';
-        for (i = pagestart + 1; i <= pagestart + pagedisp; i++) {
-          html += '<li class="pagin-item"><a href="' + separator + (i) + '" data-url="' + $pagination_container.data('url') + separator + (i) + '" data-page="' + (i) + '" title="page ' + (i) + '">' + (i) + '</a></li>';
-        }
-        // First link (page 1)
-        if (pagestart !== 0) {
-          i = 1;
-          html = '<li class="pagin-item"><a href="' + separator + (i) + '" data-url="' + $pagination_container.data('url') + separator + (i) + '" data-page="' + (i) + '" title="page ' + (i) + '">' + (i) + '</a></li><li class="pagin-item">...</li>' + html;
-        }
-        // Last link (page max)
-        if (pagestart + pagedisp !== pagemax) {
-          i = pagemax;
-          html += '<li class="pagin-item">...</li><li class="pagin-item"><a href="' + separator + (i) + '" data-url="' + $pagination_container.data('url') + separator + (i) + '" data-page="' + (i) + '" title="page ' + (i) + '">' + (i) + '</a></li>';
-        }
-        $('.pagin-next', $pagination_container).before(html);
-        $link = $('[data-page=' + page + ']', $pagination_container);
-      }
-      url = $link.data('url');
-      if(!url) url = $pagination_container.data('url')+separator+page; // if pagedisp==0
     }
+
+    $link = $('[data-page=' + page + ']', $pagination_container);
+
+    // Regenerate page groups
+    if (pagedisp > 0 && $link.length == 1) {
+      $('li:not(.pagin-prev,.pagin-next)', $pagination_container).remove();
+      var pagestart = page - Math.min(page - 1, Math.floor(pagedisp / 2));
+      var pageend = Math.min(pagestart + pagedisp - 1, pagemax);
+      if (pageend - pagestart + 1 < pagedisp) {
+        pagestart = Math.min(pagestart, Math.max(1, pageend - pagedisp + 1))
+      }
+
+      var html = '';
+      var i = 1;
+
+      // First link (page 1)
+      if (pagestart !== 1) {
+        html += '<li class="pagin-item"><a href="' + separator + (i) + '" data-url="' + $pagination_container.data('url') + separator + (i) + '" data-page="' + (i) + '" title="page ' + (i) + '">' + (i) + '</a></li>';
+        if (pagestart > 2) {
+          html += '<li class="pagin-item">...</li>';
+        }
+      }
+
+      // Links around page
+      for (i = pagestart; i <= pageend; i++) {
+        html += '<li class="pagin-item"><a href="' + separator + (i) + '" data-url="' + $pagination_container.data('url') + separator + (i) + '" data-page="' + (i) + '" title="page ' + (i) + '">' + (i) + '</a></li>';
+      }
+
+      // Last link (page max)
+      if (pageend !== pagemax) {
+        i = pagemax;
+        if (pageend < pagemax - 1) {
+          html += '<li class="pagin-item">...</li>';
+        }
+        html += '<li class="pagin-item"><a href="' + separator + (i) + '" data-url="' + $pagination_container.data('url') + separator + (i) + '" data-page="' + (i) + '" title="page ' + (i) + '">' + (i) + '</a></li>';
+      }
+
+      // Insert links
+      $('.pagin-next', $pagination_container).before(html);
+      $link = $('[data-page=' + page + ']', $pagination_container);
+    }
+
+    url = $link.data('url');
+    if(!url) url = $pagination_container.data('url')+separator+page; // if pagedisp==0
 
     $('.pagin-grids-next, .pagin-next',$pagination_container).toggleClass('is-inactive',page===pagemax);
     $('.pagin-grids-prev, .pagin-prev',$pagination_container).toggleClass('is-inactive',page<=1);
-
-    // Hide next/previous text links if not needed
-    $('.pagin-next',$pagination_container).toggleClass('visually-hidden',page==pagemax).toggleClass('is-visible',page!=pagemax);
-    $('.pagin-prev',$pagination_container).toggleClass('visually-hidden',page==1).toggleClass('is-visible',page!=1);
 
     // CSS classes
     $('li', $pagination_container).removeClass('is-active');
@@ -108,49 +122,23 @@
         $pagination_container.data('pushState', true);
       }
 			*/
-
-      // Load the contents via AJAX request
       $target_container.load(url, function() {
         // Scroll top top of content
-        var top = $pagination_container.offset().top - 10 - $('.site-banner').outerHeight();
+        var top = $pagination_container.offset().top;
         if(top) $('body,html').animate({
           scrollTop:top
         },'fast');
-
-        // Trigger an event to allow other scripts/plugins to be notified (ex : library)
-        $pagination_container.trigger('pagechange');
-
       });
     } else {
-      if(typeof console!=='undefined') {
-        console.error('Target container not found for pagination');
-      }
+      console.log('Target container not found for pagination');
     }
   }
 
   // Pagination plugin
   $.fn.cxpPagination = function() {
-
     $(this).each(function() {
-
       $(this).on('click', 'a', pagination_change);
-
-      // Init
-      var page = -1;
-      var pagemax = $(this).data('page-max');
-
-      var $activeItem = $(this).find('.pagin-item.is-active');
-      if($activeItem.length>0) {
-        page = parseInt($activeItem.children('a:first').data('page'));
-      }
-      if(page<0) page = 1;
-
-      // Hide next/previous text links if not needed
-      if(pagemax && page==pagemax) $(this).find('.pagin-next').addClass('visually-hidden');
-      if(page==1) $(this).find('.pagin-prev').addClass('visually-hidden');
-
     });
-
   };
 
   $('.cxp-pagination').cxpPagination();
