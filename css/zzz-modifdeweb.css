@@ -72,3 +72,7 @@ html[lang=en] .dor .logo .logo__image {
 #catalog-v2 [data-type="sector"] {
    display: none !important;;
 }
+/*cacher pagination New catalogue 2021*/
+#catalog-v2 .CatalogResults {
+    display: none;
+}
