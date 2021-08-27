@@ -71,6 +71,10 @@ html[lang=en] .dor .logo .logo__image {
 /*cacher nbre de résultats*/
 #catalog-v2 .CatalogResultsTitle-subtitle {
     display: none !important;}
+/*cacher compteur dans filtres activité*/
+#catalog-v2 .CatalogFilterBlock-category-resultNb {
+    display: none;
+}
 
 /*cacher filtre secteur*/
 #catalog-v2 [data-type="sector"] {
