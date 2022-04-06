@@ -949,7 +949,7 @@ li:hover > .mn-link.mn-link.is-active:after { width: 0; }
 .btn-primary span { position: relative; z-index: 5; }
 
 .btn span:after,
-.btn-primary span:after { content: ''; position: relative; top: 1px; margin: 0 0 0 16px; display: inline-block; width: 24px; height: 14px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-shape.svg); transition: .3s; }
+.btn-primary span:after { content: ''; position: relative; top: 1px; margin: 0 0 0 16px; display: inline-block; width: 24px; height: 14px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-shape-b.svg); transition: .3s; }
 
 .btn:hover,
 .btn-primary:hover { }
@@ -979,7 +979,7 @@ box-shadow: inset 3px -3px 7px rgba(0, 0, 0, 0.03); transition: background .3s; 
 
 
 .btn-video .ico-play { position: absolute; z-index: 4; left: 0; top: 0; width: 100%; height: 100%; }
-.btn-video .ico-play:before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: inline-block; width: 14px; height: 18px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-play.svg); transition: .3s; }
+.btn-video .ico-play:before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: inline-block; width: 14px; height: 18px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-play-b.svg); transition: .3s; }
 
 
 
@@ -999,7 +999,7 @@ body.safari-fixes .btn-video { padding: 20px 26px 16px 56px; }
 .lien2 span,
 .externe span { position: relative; z-index: 5; }
 .lien1 span:after,
-.lien2 span:after { content: ''; position: relative; top: 1px; margin: 0 0 0 16px; display: inline-block; width: 24px; height: 14px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-shape.svg); transition: .3s; }
+.lien2 span:after { content: ''; position: relative; top: 1px; margin: 0 0 0 16px; display: inline-block; width: 24px; height: 14px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-shape-b.svg); transition: .3s; }
 
 .lien1:hover,
 .lien2:hover { background: linear-gradient(57.92deg, #feef53 18%, #ffbfc2 85.1%);}
@@ -1023,7 +1023,7 @@ body.safari-fixes .lien2 { padding: 19px 26px 17px 33px; }
 
 .gla-btn-read-more span { position: relative; z-index: 5; }
 
-.gla-btn-read-more span:after { content: ''; position: relative; top: 1px; margin: 0 0 -1px 13px; display: inline-block; width: 22px; height: 13px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-shape.svg); transition: .3s; }
+.gla-btn-read-more span:after { content: ''; position: relative; top: 1px; margin: 0 0 -1px 13px; display: inline-block; width: 22px; height: 13px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-shape-b.svg); transition: .3s; }
 
 .gla-btn-read-more:hover { -webkit-transition: color .3s .15s; -o-transition: color .3s .15s; transition: color .3s .15s; }
 
@@ -1059,7 +1059,7 @@ box-shadow: inset 3px -3px 7px rgba(0, 0, 0, 0.03);  font-family: 'Static', sans
 .link-view-all span { position: relative; z-index: 5; }
 
 .link-read-more span:after,
-.link-view-all span:after { content: ''; position: relative; top: 1px; margin: 0 0 -1px 6px; display: inline-block; width: 17px; height: 11px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-shape.svg); transition: .3s; }
+.link-view-all span:after { content: ''; position: relative; top: 1px; margin: 0 0 -1px 6px; display: inline-block; width: 17px; height: 11px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-shape-b.svg); transition: .3s; }
 
 .link-read-more:hover,
 .link-view-all:hover { background: linear-gradient(57.92deg, #feef53 18%, #ffbfc2 85.1%); color: #353030 ; }
@@ -2355,7 +2355,7 @@ body.front .list-pratique .la-item-content { width: 51.4%; }
 .edi-family .style3 li { position: relative; float: left; padding: 0 22px 19px; width: 33.33%; }
 
 .edi-family .style3 .lien3 { position: relative; display: block; padding: 17px 0 18px 40px; border-top: 1px solid #353030; font-size: 14px; letter-spacing: .01em;  text-align: left; text-decoration: none; transition: .3s; }
-.edi-family .style3 .lien3:before { content: ''; position: absolute; top: 23px; left: 0; display: inline-block; width: 25px; height: 14px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-pill.svg); transition: .3s; }
+.edi-family .style3 .lien3:before { content: ''; position: absolute; top: 23px; left: 0; display: inline-block; width: 25px; height: 14px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(images-2021/ico-arrow-pill-b.svg); transition: .3s; }
 .edi-family .style3 .lien3 strong { margin-bottom: 2px; display: block; text-transform: uppercase; font-size: 15px; font-weight: bold; }
 
 .edi-family .style3 .lien3:hover:before { transform: translateX(8px); }
