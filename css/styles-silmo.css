@@ -2963,6 +2963,8 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 /*.hero-swiper .slider-item-active .la-item-title a > span:last-child { transform: scaleX(1); transform-origin: left center; transition: transform 0.6s 1s; }*/
 .hero-swiper .slider-item-active .la-item-title a > span:last-child { opacity: 1; transition: opacity 0.3s 1s; }
 .hero-swiper .slider-item-active .la-item-btn { opacity: 1; transition: opacity 0.6s 0.6s; }
+.hero-swiper .slider-item-active  { z-index: 9999; }
+
 
 
 @media(max-width: 1600px){
