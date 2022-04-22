@@ -2142,7 +2142,7 @@ body.front .cxp-pagination .list-grids-with-pagin { max-width: 988px; margin: 0 
 .list-actu .grid-la-list .gla-item { width: 33.33%; margin: 0; padding: 0 20px 11px; box-shadow: none; border: 0; }
 .list-actu .grid-la-list .gla-item > a { text-decoration: none; }
 
-.list-actu .gla-item-img { transition: transform .3s; }
+.list-actu .gla-item-img, .list-actu .cx-lazy-load { transition: transform .3s; }
 .list-actu .gla-item-img-wrapper { position: relative; margin: 0; overflow: hidden; }
 
 .list-actu .gla-item > a:hover .gla-item-content,
@@ -2151,7 +2151,7 @@ body.front .cxp-pagination .list-grids-with-pagin { max-width: 988px; margin: 0 
 .list-actu .gla-item > a:hover .gla-item-title,
 .list-actu .gla-item > a:focus .gla-item-title { color: #353030; }
 
-.list-actu .gla-item:hover .gla-item-img { transform: scale(1.05); }
+.list-actu .gla-item:hover .gla-item-img, .list-actu .gla-item:hover img { transform: scale(1.05); }
 .list-actu .gla-item:hover .gla-item-title { transform: translateY(-12px); transition-delay: .2s; }
 .list-actu .gla-item:hover > a:hover .gla-btn-read-more { transform: translateY(-12px); }
 
@@ -2161,6 +2161,9 @@ body.front .cxp-pagination .list-grids-with-pagin { max-width: 988px; margin: 0 
 .list-actu .grid-la-list .gla-item-desc { display: none; }
 .list-actu .grid-la-list .gla-item-btn { position: absolute; bottom: 20px; left: 0; margin: 0; }
 .list-actu .grid-la-list .gla-btn-read-more { padding-left: 17px; padding-right: 17px; }
+
+
+.list-grids-with-pagin .la-item-img-wrapper  { width: 100%; }
 
 
 /*.list-actu .gla-item .gla-item-content,
@@ -2555,7 +2558,7 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 
 .site-footer .newsletter-form { display: block !important; }
 .site-footer .nf-main-content { margin: 0 auto; padding: 63px 0; background: transparent; }
-.site-footer .nf-main-content .inside { max-width: 1100px; margin: 0 0 0 auto; padding: 0; }
+.site-footer .nf-main-content .inside { max-width: 1100px; /*margin: 0 0 0 auto;*/ padding: 0; }
 .site-footer .nf-main-content .inside:after { content: ''; display: table; clear: both; line-height: 0; }
 .site-footer .nf-title { float: left; width: 36%; font-size: 30px; font-weight: bold; font-style: normal; border-left: 1px solid #fff; padding: 5px 36px 5px 36px; text-transform: uppercase; line-height: 1.14; letter-spacing: -.026em; }
 .site-footer .nf-main-content form { float: left; width: 64%; }
@@ -2589,7 +2592,7 @@ body.safari-fixes .edi-family .inside > h4 { padding-top: 7px; padding-bottom: 3
 .site-footer .optin-container { margin: 20px 4px 0; float: left; width: 57%; text-align: center; }
 .site-footer .optin-container .nf-form-input input { position: absolute; opacity: 0; }
 
-.site-footer .optin-container .nf-form-input { position: relative; float: none; width: auto; display: inline-block; padding-left: 33px; margin: 0; font-size: 12px; line-height: 1.58; cursor: pointer; letter-spacing: .04em; }
+.site-footer .optin-container .nf-form-input { position: relative; float: none; width: auto; display: inline-block; padding-left: 33px; margin: 0; font-size: 12px; line-height: 1.58; cursor: pointer; letter-spacing: .04em; text-align: left; }
 .site-footer .optin-container .nf-form-input:before { content: ''; position: absolute; top: -2px; left: 0; width: 19px; height: 19px; border: 1px solid #fff; border-radius: 3px; }
 .site-footer .optin-container .nf-form-input:after { content: ''; position: absolute; top: 4px; left: 3px; width: 11px; height: 7px; background: url(images-2021/ico-check.svg) center no-repeat; background-size: 100% 100%; opacity: 0; visibility: hidden; }
 .site-footer .optin-container.is-checked .nf-form-input:after { opacity: 1; visibility: visible; }
