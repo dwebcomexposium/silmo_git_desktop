@@ -510,10 +510,16 @@ blockquote:last-child { margin-bottom: 0; }
 }
 
 
-@media (max-width: 1350px) {
-/*	.site-banner .header-content .header-content__right { padding-right: 140px; }*/
-/*	.is-stuck.site-banner .header-content .header-content__right { padding-right: 50px; }*/
+@media (max-width: 1180px) {
+.site-banner .header-content .header-content__right {position: relative; float: right; padding-right: 30px;}
+.site-banner .lang-switcher {right: 10px!important; }
+.is-stuck.site-banner .lang-switcher { display: none;  }
+.is-stuck.site-banner .header-content__right {padding-right: 15px;}
 }
+
+
+
+
 
 @media (max-width: 1023px) {
 	.site-banner {}
@@ -547,8 +553,8 @@ html[lang="en"] .site-banner .ls-trigger:before { background-image: url(images-2
 
 
 @media (max-width: 1350px) {
-	.site-banner .lang-switcher {right: 40px;  }
-	.is-stuck.site-banner .lang-switcher { display: none;  }
+/*	.site-banner .lang-switcher {right: 40px;  }*/
+/*	.is-stuck.site-banner .lang-switcher { display: none;  }*/
 
 }
 
@@ -604,7 +610,7 @@ body.safari-fixes .site-banner .gsf-submit-btn span { position: relative; top: 2
 
 
 @media (max-width: 1559px) {
-	.site-banner .global-search-form { margin-right: 10px; }
+/*	.site-banner .global-search-form { margin-right: 10px; }*/
 }
 
 /*  cxpm  */
@@ -1113,7 +1119,7 @@ body.safari-fixes .link-view-all { padding: 14px 26px 11px; }
 	Header Box
 \* ------------------------------------------------------------ */
 
-.header-box { position: fixed; right: 0; top: 312px; z-index: 44; color: #353030; font-size: 14px; letter-spacing: .12em; line-height: 1.22; font-family: Static; font-weight: normal; text-transform: uppercase; transition: .3s; }
+.header-box { position: fixed; right: 0; top: 312px; z-index: 99; color: #353030; font-size: 14px; letter-spacing: .12em; line-height: 1.22; font-family: Static; font-weight: normal; text-transform: uppercase; transition: .3s; }
 .header-box a { position: relative; display: block; text-decoration: none; padding: 77px 15px 20px 27px; min-width: 140px; min-height: 140px; }
 .header-box a:before { content: ''; z-index: -1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(57.92deg, #FFF26B 5.26%, #FFB3D7 88.67%); box-shadow: inset 3px -3px 10px rgba(0, 0, 0, 0.02); transition: .3s; }
 .header-box a:hover:before { transform: scale(1.1); background: linear-gradient(57.92deg, #feef53 18%, #ffbfc2 85.1%); }
