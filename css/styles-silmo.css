@@ -280,12 +280,14 @@ blockquote:last-child { margin-bottom: 0; }
 
 .ico-facebook { width: 9px; height: 17px; background-image: url(images-2021/ico-facebook.svg); }
 .ico-pinterest { width: 13px; height: 13px; background-image: url(images-2021/ico-pinterest.svg); }
+.ico-linkedin { width: 15px; height: 15px; background-image: url(images-2021/ico-linkedin.svg); }
 .ico-twitter { width: 17px; height: 14px; background-image: url(images-2021/ico-twitter.svg); }
 .ico-instagram { width: 16px; height: 16px; background-image: url(images-2021/ico-instagram.svg); }
 .ico-youtube { width: 20px; height: 14px; background-image: url(images-2021/ico-youtube.svg); }
 
 .ico-facebook-white { width: 9px; height: 17px; background-image: url(images-2021/ico-facebook-white.svg); }
 .ico-pinterest-white { width: 12px; height: 17px; background-image: url(images-2021/ico-pinterest-white.svg); }
+.ico-linkedin-white { width: 15px; height: 15px; background-image: url(images-2021/ico-linkedin-white.svg); }
 .ico-twitter-white { width: 20px; height: 17px; background-image: url(images-2021/ico-twitter-white.svg); }
 .ico-instagram-white { width: 17px; height: 17px; background-image: url(images-2021/ico-instagram-white.svg); }
 .ico-youtube-white { width: 21px; height: 16px; background-image: url(images-2021/ico-youtube-white.svg); }
