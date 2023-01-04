@@ -84,3 +84,8 @@ html[lang=en] .dor .logo .logo__image {
 #catalog-v2 .CatalogResults {
     display: none;
 }
+.ico-flickr {
+    width: 17px;
+    height: 14px;
+    background-image: url(images-2021/ico-twitter.svg);
+}
