@@ -310,7 +310,7 @@ blockquote:last-child { margin-bottom: 0; }
 	Global Wrapper
 \* ------------------------------------------------------------ */
 
-.global-wrapper { position: relative; z-index: 15; overflow: hidden;  }
+.global-wrapper { position: relative; z-index: 15; overflow: visible;  }
 .global-wrapper main {}
 
 .is-contentPusher { display: none; }
